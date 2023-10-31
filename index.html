@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguro No Pagamos Cooperativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contacto</h1>
+    <hr>
+    <form class="container">
+        <div class="form1">
+        <label for="nombre">Nombre: </label><br>
+        <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form2">
+        <label for="apellido">Apellido: </label><br>
+        <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div class="form3">
+        <label for="dni">DNI: </label><br>
+        <input type="number" id="dni" name="dni" required>
+        </div>
+        <div class="form4">
+        <label for="email">Email: </label><br>  
+        <input type="email" id="email" name="email" placeholder="seguro@gmail.com" required>
+        </div>
+        <div class="form5">
+        <label for="telefono">Teléfono: </label><br>
+        <input type="tel" id="telefono" name="telefono" placeholder="11-45458888" required>
+        </div>
+        <div class="formSelect">
+            <h2>Tipo de seguro</h2>
+            <label><em><b>Seleccione el tipo de seguro que desea contratar:</b></em></label>
+            <select name="tiposeguro" id="seguro">
+                <option value="básico" selected="básico">Básico</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="premium">Premium</option>
+            </select>
+        </div>
+        <div id="precio"></div>
+        <div class="submit">
+            <input  type="submit" value="Enviar">
+        </div>
+    </form>
+    <footer>
+        <p class="footer">&copy; Seguros No Pagamos Cooperativa | Todos los derechos reservados 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
